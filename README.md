@@ -2,6 +2,15 @@
 
 A tiny code to convert date into jalali calendar using pure php code without extra library and code.
 
+## Using
+
+```php
+<?php
+include "src/JalaliDate.php";
+echo jalaliDate();
+?>
+```
+
 ---------
 
 # Max Base
