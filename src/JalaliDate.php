@@ -1,6 +1,8 @@
 <?php
 // Max Base
 // https://github.com/BaseMax/PHPJalaliDate
+date_default_timezone_set('America/New_York');
+// date_default_timezone_set('Asia/Tehran');
 function jalaliDate() {
 	$input=[
 		"year"=>date("Y"),
