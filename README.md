@@ -11,6 +11,12 @@ echo jalaliDate(); // It will return today date in Jalali date system.
 ?>
 ```
 
+## Related Repository
+
+You can see the solution algorithm for most programming languages at [here](https://github.com/BaseMax/gregorian_to_jalali).
+
+https://github.com/BaseMax/gregorian_to_jalali
+
 ---------
 
 # Max Base
