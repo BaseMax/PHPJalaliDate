@@ -7,7 +7,7 @@ A tiny code to convert date into jalali calendar using pure php code without ext
 ```php
 <?php
 include "src/JalaliDate.php";
-echo jalaliDate();
+echo jalaliDate(); // It will return today date in Jalali date system.
 ?>
 ```
 
