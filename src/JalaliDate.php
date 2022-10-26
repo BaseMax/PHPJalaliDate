@@ -4,9 +4,9 @@
  * Name: PHP Jalali Date
  * Date: 2022/01/26
  * Repository: https://github.com/BaseMax/PHPJalaliDate
- * /
+ */
 
-function jalaliDate($year = null, $month = null, $day = null) : array {
+function jalaliDate(?int $year = null, ?int $month = null, ?int $day = null) : array {
 	if ($year === null || $month === null || $day === null) {
 		$year = date("Y");
 		$month = date("m");
@@ -17,7 +17,6 @@ function jalaliDate($year = null, $month = null, $day = null) : array {
 		"month" => $month,
 		"day" => $day,
 	];
-
 
 	$result = [];
 	$array = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
@@ -44,7 +43,7 @@ function jalaliDate($year = null, $month = null, $day = null) : array {
 	}
 
 	$result["month"] = ($days < 186) ? 1 + (int)($days / 31) : 7 + (int)(($days - 186) / 30);
-	$result["day"] = 1 + (($days < 186)?($days%31):(($days-186)%30));
+	$result["day"] = 1 + (($days < 186) ? ($days % 31) : (($days - 186) % 30));
 
 	if ($result["month"] < 10) $result["month"] = "0" . $result["month"];
 
@@ -52,3 +51,4 @@ function jalaliDate($year = null, $month = null, $day = null) : array {
 
 	return $result;
 }
+
