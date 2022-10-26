@@ -1,13 +1,35 @@
 # PHP Jalali Date
 
-A tiny code to convert date into jalali calendar using pure php code without extra library and code.
+A tiny code to convert date into **Jalali calendar** using Pure PHP code without extra library and code.
 
 ## Using
 
 ```php
+array jalaliDate(?int $year, ?int $month, ?int $day)
+```
+
+## Examples
+
+```php
 <?php
 include "src/JalaliDate.php";
-echo jalaliDate(); // It will return today date in Jalali date system.
+
+print_r(jalaliDate()); // It will return today date in Jalali date system.
+// Array
+// (
+//     [year] => 1401
+//     [month] => 08
+//     [day] => 04
+// )
+
+print_r(jalaliDate(2022, 9, 26));
+// Array
+// (
+//     [year] => 1401
+//     [month] => 07
+//     [day] => 04
+// )
+
 ?>
 ```
 
