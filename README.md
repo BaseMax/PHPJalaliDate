@@ -8,12 +8,19 @@ A tiny code to convert date into **Jalali calendar** using Pure PHP code without
 array jalaliDate(?int $year, ?int $month, ?int $day)
 ```
 
+## Default Timezone
+
+```
+date_default_timezone_set('Asia/Tehran');
+// OR
+date_default_timezone_set('America/New_York');
+```
+
 ## Examples
 
-```php
-<?php
-include "src/JalaliDate.php";
+First you need to include the library by `include "src/JalaliDate.php";` next:
 
+```php
 print_r(jalaliDate()); // It will return today date in Jalali date system.
 // Array
 // (
@@ -29,8 +36,6 @@ print_r(jalaliDate(2022, 9, 26));
 //     [month] => 07
 //     [day] => 04
 // )
-
-?>
 ```
 
 ## Related Repository
