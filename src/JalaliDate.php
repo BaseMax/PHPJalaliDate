@@ -1,17 +1,23 @@
 <?php
-// Max Base
-// https://github.com/BaseMax/PHPJalaliDate
-// date_default_timezone_set('Asia/Tehran');
-date_default_timezone_set('America/New_York');
+/*
+ * Author: Max Base
+ * Name: PHP Jalali Date
+ * Date: 2022/01/26
+ * Repository: https://github.com/BaseMax/PHPJalaliDate
+ * /
 
 function jalaliDate($year = null, $month = null, $day = null) : array {
 	if ($year === null || $month === null || $day === null) {
-		$input = [
-			"year" => date("Y"),
-			"month" => date("m"),
-			"day" => date("d"),
-		];
+		$year = date("Y");
+		$month = date("m");
+		$day = date("d");
 	}
+	$input = [
+		"year" => $year,
+		"month" => $month,
+		"day" => $day,
+	];
+
 
 	$result = [];
 	$array = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
