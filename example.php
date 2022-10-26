@@ -4,8 +4,6 @@
 
 include "src/JalaliDate.php";
 
-////////////////////////////
-
 print_r(jalaliDate()); // It will return today date in Jalali date system.
 // Array
 // (
